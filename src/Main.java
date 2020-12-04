@@ -6,17 +6,17 @@ public class Main {
         UnivercityService univercityService=new UnivercityService();
       String ask="";
         System.out.println("What operation do you want to do? ");
-        System.out.println(" 1-addStudent");
-        System.out.println(" 2-addTeacher");
-        System.out.println(" 3-EditStudent");
-        System.out.println(" 4-EditTeacher");
-        System.out.println(" 5-DeleteStudent");
-        System.out.println(" 6-DeleteTeacher");
-        System.out.println(" 7-studentDisplay");
-        System.out.println(" 8-teacherDisplay");
-        System.out.println(" 9-student_teacherDisplay ");
-        System.out.println(" 10-selectTeacher");
-        System.out.println(" 11-studentList");
+        System.out.println(" 1-add     Student");
+        System.out.println(" 2-add     Teacher");
+        System.out.println(" 3-Edit    Student");
+        System.out.println(" 4-Edit    Teacher");
+        System.out.println(" 5-Delete  Student");
+        System.out.println(" 6-Delete  Teacher");
+        System.out.println(" 7-student Display");
+        System.out.println(" 8-teacher Display");
+        System.out.println(" 9-student_teacher Display ");
+        System.out.println(" 10-select Teacher");
+        System.out.println(" 11-student   List");
         System.out.println(" 12-exit");
       do{
 
@@ -87,6 +87,7 @@ public class Main {
                   System.out.println("enter teacher id :");
                   int teacher_id=scanner.nextInt();
                   univercityService.studentList(teacher_id);
+                  break;
           }
 
       }while (!ask.equals("12"));
