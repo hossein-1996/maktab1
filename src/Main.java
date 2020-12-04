@@ -5,8 +5,21 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
         UnivercityService univercityService=new UnivercityService();
       String ask="";
+        System.out.println("What operation do you want to do? ");
+        System.out.println(" 1-addStudent");
+        System.out.println(" 2-addTeacher");
+        System.out.println(" 3-EditStudent");
+        System.out.println(" 4-EditTeacher");
+        System.out.println(" 5-DeleteStudent");
+        System.out.println(" 6-DeleteTeacher");
+        System.out.println(" 7-studentDisplay");
+        System.out.println(" 8-teacherDisplay");
+        System.out.println(" 9-student_teacherDisplay ");
+        System.out.println(" 10-selectTeacher");
+        System.out.println(" 11-studentList");
+        System.out.println(" 12-exit");
       do{
-          System.out.println("What operation do you want to do? 1-addStudent 2-addTeacher 3-EditStudent 4-EditTeacher 5-DeleteStudent 6-DeleteTeacher 7-studentDisplay 8-teacherDisplay 9-student_teacher 10-selectTeacher 11-studentList 12-exit");
+
           ask=scanner.next();
           switch (ask){
               case "1":
